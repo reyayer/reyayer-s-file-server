@@ -5,22 +5,22 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.0.2 commit date:2023-12-05, commit time:07:41, hash:9be62e85b727</authoring_tool>
     </contributor>
-    <created>2025-05-23T14:07:21</created>
-    <modified>2025-05-23T14:07:21</modified>
+    <created>2025-05-23T14:23:42</created>
+    <modified>2025-05-23T14:23:42</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
   <library_effects>
-    <effect id="MI_AM_mobiuszero_006-effect">
+    <effect id="MI_AM_mobiuszero-effect">
       <profile_COMMON>
-        <newparam sid="tex_mobiuszero_png_004-surface">
+        <newparam sid="tex_mobiuszero_png-surface">
           <surface type="2D">
-            <init_from>tex_mobiuszero_png_004</init_from>
+            <init_from>tex_mobiuszero_png</init_from>
           </surface>
         </newparam>
-        <newparam sid="tex_mobiuszero_png_004-sampler">
+        <newparam sid="tex_mobiuszero_png-sampler">
           <sampler2D>
-            <source>tex_mobiuszero_png_004-surface</source>
+            <source>tex_mobiuszero_png-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -29,97 +29,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="tex_mobiuszero_png_004-sampler" texcoord="aw_mobiuszero_cann01-mesh-map-0"/>
-            </diffuse>
-            <reflectivity>
-              <float sid="specular">0.1</float>
-            </reflectivity>
-            <index_of_refraction>
-              <float sid="ior">1.5</float>
-            </index_of_refraction>
-          </lambert>
-        </technique>
-      </profile_COMMON>
-    </effect>
-    <effect id="MI_AM_mobiuszero_005-effect">
-      <profile_COMMON>
-        <newparam sid="tex_mobiuszero_png_003-surface">
-          <surface type="2D">
-            <init_from>tex_mobiuszero_png_003</init_from>
-          </surface>
-        </newparam>
-        <newparam sid="tex_mobiuszero_png_003-sampler">
-          <sampler2D>
-            <source>tex_mobiuszero_png_003-surface</source>
-          </sampler2D>
-        </newparam>
-        <technique sid="common">
-          <lambert>
-            <emission>
-              <color sid="emission">0 0 0 1</color>
-            </emission>
-            <diffuse>
-              <texture texture="tex_mobiuszero_png_003-sampler" texcoord="aw_mobiuszero_cann01-mesh-map-0"/>
-            </diffuse>
-            <reflectivity>
-              <float sid="specular">0.1</float>
-            </reflectivity>
-            <index_of_refraction>
-              <float sid="ior">1.5</float>
-            </index_of_refraction>
-          </lambert>
-        </technique>
-      </profile_COMMON>
-    </effect>
-    <effect id="MI_AM_mobiuszero_004-effect">
-      <profile_COMMON>
-        <newparam sid="tex_mobiuszero_png_002-surface">
-          <surface type="2D">
-            <init_from>tex_mobiuszero_png_002</init_from>
-          </surface>
-        </newparam>
-        <newparam sid="tex_mobiuszero_png_002-sampler">
-          <sampler2D>
-            <source>tex_mobiuszero_png_002-surface</source>
-          </sampler2D>
-        </newparam>
-        <technique sid="common">
-          <lambert>
-            <emission>
-              <color sid="emission">0 0 0 1</color>
-            </emission>
-            <diffuse>
-              <texture texture="tex_mobiuszero_png_002-sampler" texcoord="aw_mobiuszero_cann01-mesh-map-0"/>
-            </diffuse>
-            <reflectivity>
-              <float sid="specular">0.1</float>
-            </reflectivity>
-            <index_of_refraction>
-              <float sid="ior">1.5</float>
-            </index_of_refraction>
-          </lambert>
-        </technique>
-      </profile_COMMON>
-    </effect>
-    <effect id="MI_AM_mobiuszero_003-effect">
-      <profile_COMMON>
-        <newparam sid="tex_mobiuszero_png_001-surface">
-          <surface type="2D">
-            <init_from>tex_mobiuszero_png_001</init_from>
-          </surface>
-        </newparam>
-        <newparam sid="tex_mobiuszero_png_001-sampler">
-          <sampler2D>
-            <source>tex_mobiuszero_png_001-surface</source>
-          </sampler2D>
-        </newparam>
-        <technique sid="common">
-          <lambert>
-            <emission>
-              <color sid="emission">0 0 0 1</color>
-            </emission>
-            <diffuse>
-              <texture texture="tex_mobiuszero_png_001-sampler" texcoord="aw_mobiuszero_cann01-mesh-map-0"/>
+              <texture texture="tex_mobiuszero_png-sampler" texcoord="aw_mobiuszero_cann01-mesh-map-0"/>
             </diffuse>
             <reflectivity>
               <float sid="specular">0.1</float>
@@ -161,72 +71,18 @@
         </technique>
       </profile_COMMON>
     </effect>
-    <effect id="MI_AM_mobiuszero_002-effect">
-      <profile_COMMON>
-        <newparam sid="tex_mobiuszero_png_001-surface">
-          <surface type="2D">
-            <init_from>tex_mobiuszero_png_001</init_from>
-          </surface>
-        </newparam>
-        <newparam sid="tex_mobiuszero_png_001-sampler">
-          <sampler2D>
-            <source>tex_mobiuszero_png_001-surface</source>
-          </sampler2D>
-        </newparam>
-        <technique sid="common">
-          <lambert>
-            <emission>
-              <color sid="emission">0 0 0 1</color>
-            </emission>
-            <diffuse>
-              <texture texture="tex_mobiuszero_png_001-sampler" texcoord="am_mobiuszero-mesh-map-0"/>
-            </diffuse>
-            <reflectivity>
-              <float sid="specular">0.1</float>
-            </reflectivity>
-            <index_of_refraction>
-              <float sid="ior">1.5</float>
-            </index_of_refraction>
-          </lambert>
-        </technique>
-      </profile_COMMON>
-    </effect>
   </library_effects>
   <library_images>
-    <image id="tex_mobiuszero_d_png_001" name="tex_mobiuszero_d_png_001">
-      <init_from>tex_mobiuszero_d.png.001.png</init_from>
-    </image>
-    <image id="tex_mobiuszero_png_001" name="tex_mobiuszero_png_001">
-      <init_from>tex_mobiuszero.png.001.png</init_from>
-    </image>
-    <image id="tex_mobiuszero_png_002" name="tex_mobiuszero_png_002">
-      <init_from>tex_mobiuszero.png.002.png</init_from>
-    </image>
-    <image id="tex_mobiuszero_png_003" name="tex_mobiuszero_png_003">
-      <init_from>tex_mobiuszero.png.003.png</init_from>
-    </image>
-    <image id="tex_mobiuszero_png_004" name="tex_mobiuszero_png_004">
-      <init_from>tex_mobiuszero.png.004.png</init_from>
+    <image id="tex_mobiuszero_png" name="tex_mobiuszero_png">
+      <init_from>tex_mobiuszero.png</init_from>
     </image>
   </library_images>
   <library_materials>
-    <material id="MI_AM_mobiuszero_006-material" name="MI_AM_mobiuszero.006">
-      <instance_effect url="#MI_AM_mobiuszero_006-effect"/>
-    </material>
-    <material id="MI_AM_mobiuszero_005-material" name="MI_AM_mobiuszero.005">
-      <instance_effect url="#MI_AM_mobiuszero_005-effect"/>
-    </material>
-    <material id="MI_AM_mobiuszero_004-material" name="MI_AM_mobiuszero.004">
-      <instance_effect url="#MI_AM_mobiuszero_004-effect"/>
-    </material>
-    <material id="MI_AM_mobiuszero_003-material" name="MI_AM_mobiuszero.003">
-      <instance_effect url="#MI_AM_mobiuszero_003-effect"/>
+    <material id="MI_AM_mobiuszero-material" name="MI_AM_mobiuszero">
+      <instance_effect url="#MI_AM_mobiuszero-effect"/>
     </material>
     <material id="MI_AM_mobiuszero_D_001-material" name="MI_AM_mobiuszero_D.001">
       <instance_effect url="#MI_AM_mobiuszero_D_001-effect"/>
-    </material>
-    <material id="MI_AM_mobiuszero_002-material" name="MI_AM_mobiuszero.002">
-      <instance_effect url="#MI_AM_mobiuszero_002-effect"/>
     </material>
   </library_materials>
   <library_geometries>
@@ -264,7 +120,7 @@
         <vertices id="aw_mobiuszero_cann01_004-mesh-vertices">
           <input semantic="POSITION" source="#aw_mobiuszero_cann01_004-mesh-positions"/>
         </vertices>
-        <triangles material="MI_AM_mobiuszero_006-material" count="215">
+        <triangles material="MI_AM_mobiuszero-material" count="215">
           <input semantic="VERTEX" source="#aw_mobiuszero_cann01_004-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#aw_mobiuszero_cann01_004-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#aw_mobiuszero_cann01_004-mesh-map-0" offset="2" set="0"/>
@@ -306,7 +162,7 @@
         <vertices id="aw_mobiuszero_cann01_003-mesh-vertices">
           <input semantic="POSITION" source="#aw_mobiuszero_cann01_003-mesh-positions"/>
         </vertices>
-        <triangles material="MI_AM_mobiuszero_005-material" count="215">
+        <triangles material="MI_AM_mobiuszero-material" count="215">
           <input semantic="VERTEX" source="#aw_mobiuszero_cann01_003-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#aw_mobiuszero_cann01_003-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#aw_mobiuszero_cann01_003-mesh-map-0" offset="2" set="0"/>
@@ -348,7 +204,7 @@
         <vertices id="aw_mobiuszero_cann01_002-mesh-vertices">
           <input semantic="POSITION" source="#aw_mobiuszero_cann01_002-mesh-positions"/>
         </vertices>
-        <triangles material="MI_AM_mobiuszero_004-material" count="215">
+        <triangles material="MI_AM_mobiuszero-material" count="215">
           <input semantic="VERTEX" source="#aw_mobiuszero_cann01_002-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#aw_mobiuszero_cann01_002-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#aw_mobiuszero_cann01_002-mesh-map-0" offset="2" set="0"/>
@@ -390,7 +246,7 @@
         <vertices id="aw_mobiuszero_cann01_001-mesh-vertices">
           <input semantic="POSITION" source="#aw_mobiuszero_cann01_001-mesh-positions"/>
         </vertices>
-        <triangles material="MI_AM_mobiuszero_003-material" count="215">
+        <triangles material="MI_AM_mobiuszero-material" count="215">
           <input semantic="VERTEX" source="#aw_mobiuszero_cann01_001-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#aw_mobiuszero_cann01_001-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#aw_mobiuszero_cann01_001-mesh-map-0" offset="2" set="0"/>
@@ -438,7 +294,7 @@
           <input semantic="TEXCOORD" source="#am_mobiuszero_001-mesh-map-0" offset="2" set="0"/>
           <p>0 0 0 1 1 1 2 2 2 3 3 3 4 4 4 5 5 5 6 6 6 7 7 7 8 8 8 9 9 9 10 10 10 11 11 11</p>
         </triangles>
-        <triangles material="MI_AM_mobiuszero_002-material" count="826">
+        <triangles material="MI_AM_mobiuszero-material" count="826">
           <input semantic="VERTEX" source="#am_mobiuszero_001-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#am_mobiuszero_001-mesh-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#am_mobiuszero_001-mesh-map-0" offset="2" set="0"/>
@@ -1002,7 +858,7 @@
                 <instance_material symbol="MI_AM_mobiuszero_D_001-material" target="#MI_AM_mobiuszero_D_001-material">
                   <bind_vertex_input semantic="am_mobiuszero-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
                 </instance_material>
-                <instance_material symbol="MI_AM_mobiuszero_002-material" target="#MI_AM_mobiuszero_002-material">
+                <instance_material symbol="MI_AM_mobiuszero-material" target="#MI_AM_mobiuszero-material">
                   <bind_vertex_input semantic="am_mobiuszero-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
                 </instance_material>
               </technique_common>
@@ -1099,7 +955,7 @@
               <skeleton>#aw_mobiuszero_cann01_Root</skeleton>
               <bind_material>
                 <technique_common>
-                  <instance_material symbol="MI_AM_mobiuszero_003-material" target="#MI_AM_mobiuszero_003-material">
+                  <instance_material symbol="MI_AM_mobiuszero-material" target="#MI_AM_mobiuszero-material">
                     <bind_vertex_input semantic="aw_mobiuszero_cann01-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
                   </instance_material>
                 </technique_common>
@@ -1197,7 +1053,7 @@
               <skeleton>#aw_mobiuszero_cann01_003_Root</skeleton>
               <bind_material>
                 <technique_common>
-                  <instance_material symbol="MI_AM_mobiuszero_004-material" target="#MI_AM_mobiuszero_004-material">
+                  <instance_material symbol="MI_AM_mobiuszero-material" target="#MI_AM_mobiuszero-material">
                     <bind_vertex_input semantic="aw_mobiuszero_cann01-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
                   </instance_material>
                 </technique_common>
@@ -1295,7 +1151,7 @@
               <skeleton>#aw_mobiuszero_cann01_004_Root</skeleton>
               <bind_material>
                 <technique_common>
-                  <instance_material symbol="MI_AM_mobiuszero_005-material" target="#MI_AM_mobiuszero_005-material">
+                  <instance_material symbol="MI_AM_mobiuszero-material" target="#MI_AM_mobiuszero-material">
                     <bind_vertex_input semantic="aw_mobiuszero_cann01-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
                   </instance_material>
                 </technique_common>
@@ -1393,7 +1249,7 @@
               <skeleton>#aw_mobiuszero_cann01_007_Root</skeleton>
               <bind_material>
                 <technique_common>
-                  <instance_material symbol="MI_AM_mobiuszero_006-material" target="#MI_AM_mobiuszero_006-material">
+                  <instance_material symbol="MI_AM_mobiuszero-material" target="#MI_AM_mobiuszero-material">
                     <bind_vertex_input semantic="aw_mobiuszero_cann01-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
                   </instance_material>
                 </technique_common>
