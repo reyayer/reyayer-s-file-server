@@ -73,14 +73,14 @@
     </effect>
     <effect id="MI_MS_stfre-effect">
       <profile_COMMON>
-        <newparam sid="tex_stfre_png_001-surface">
+        <newparam sid="tex_stfre_png-surface">
           <surface type="2D">
-            <init_from>tex_stfre_png_001</init_from>
+            <init_from>tex_stfre_png</init_from>
           </surface>
         </newparam>
-        <newparam sid="tex_stfre_png_001-sampler">
+        <newparam sid="tex_stfre_png-sampler">
           <sampler2D>
-            <source>tex_stfre_png_001-surface</source>
+            <source>tex_stfre_png-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -89,7 +89,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="tex_stfre_png_001-sampler" texcoord="UVMap"/>
+              <texture texture="tex_stfre_png-sampler" texcoord="UVMap"/>
             </diffuse>
             <reflectivity>
               <float sid="specular">0.1</float>
@@ -139,8 +139,8 @@
     <image id="tex_fremt_wp_png" name="tex_fremt_wp_png">
       <init_from>tex_fremt_wp.png</init_from>
     </image>
-    <image id="tex_stfre_png_001" name="tex_stfre_png_001">
-      <init_from>tex_stfre.png.001.png</init_from>
+    <image id="tex_stfre_png" name="tex_stfre_png">
+      <init_from>tex_stfre.png</init_from>
     </image>
     <image id="tex_stfredrg_png" name="tex_stfredrg_png">
       <init_from>tex_stfredrg.png</init_from>
