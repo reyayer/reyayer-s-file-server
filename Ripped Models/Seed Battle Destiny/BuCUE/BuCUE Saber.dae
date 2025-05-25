@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.0.2 commit date:2023-12-05, commit time:07:41, hash:9be62e85b727</authoring_tool>
+    </contributor>
+    <created>2025-05-25T12:11:17</created>
+    <modified>2025-05-25T12:11:17</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="MI_WP_bucu_bes-effect">
+      <profile_COMMON>
+        <newparam sid="wp_bucu_bes_png-surface">
+          <surface type="2D">
+            <init_from>wp_bucu_bes_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="wp_bucu_bes_png-sampler">
+          <sampler2D>
+            <source>wp_bucu_bes_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="wp_bucu_bes_png-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <reflectivity>
+              <float sid="specular">0.1</float>
+            </reflectivity>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="wp_bucu_bes_png" name="wp_bucu_bes_png">
+      <init_from>wp_bucu_bes.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="MI_WP_bucu_bes-material" name="MI_WP_bucu_bes">
+      <instance_effect url="#MI_WP_bucu_bes-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="wp_bucu_bes-mesh" name="wp_bucu_bes">
+      <mesh>
+        <source id="wp_bucu_bes-mesh-positions">
+          <float_array id="wp_bucu_bes-mesh-positions-array" count="114">-0.01881802 0 -0.129 0.01881808 0 -0.129 0.01330637 -0.01330637 -0.129 -0.01330637 -0.01330637 -0.129 0 -0.01881802 -0.129 0 0.01881802 -0.129 0.01330637 0.01330643 -0.129 -0.01330637 0.01330631 -0.129 0.01881808 0 -0.129 -0.01881802 0 -0.129 0.01881808 0 0.129 -0.01881802 0 0.129 0.01330637 -0.01330631 0.129 -0.01330637 -0.01330631 0.129 0 -0.01881802 0.129 0.01330637 0.01330643 0.129 -0.01881802 0 0.129 0.01881808 0 0.129 -0.01330637 0.01330643 0.129 0 0.01881808 0.129 -0.01330637 -0.01330637 -0.129 -0.01881802 0 0.129 -0.01881802 0 -0.129 -0.01330637 -0.01330631 0.129 0 -0.01881802 0.129 0 -0.01881802 -0.129 0.01330637 -0.01330637 -0.129 0.01330637 -0.01330631 0.129 0.01881808 0 0.129 0.01881808 0 -0.129 0.01330637 0.01330643 0.129 0.01330637 0.01330643 -0.129 0 0.01881808 0.129 0 0.01881802 -0.129 -0.01330637 0.01330643 0.129 -0.01330637 0.01330631 -0.129 -0.01881802 0 -0.129 -0.01881802 0 0.129</float_array>
+          <technique_common>
+            <accessor source="#wp_bucu_bes-mesh-positions-array" count="38" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wp_bucu_bes-mesh-normals">
+          <float_array id="wp_bucu_bes-mesh-normals-array" count="84">0 0 -1 0 -1.35179e-6 -1 1.62005e-6 -8.87916e-7 -1 0 -2.2397e-6 -1 0 2.2397e-6 1 0 2.2397e-6 1 0 -5.4071e-6 1 0 -1.11985e-6 1 0 -1.11985e-6 1 0 0 1 -0.7071073 -0.7071064 0 -1 1.29938e-5 -1.85808e-5 -1 1.28448e-5 1.82818e-5 -0.7071076 -0.707106 0 0 -1 0 0 -1 0 0.7071062 -0.7071074 0 0.7071064 -0.7071072 0 1 -1.10894e-6 0 1 -5.33935e-7 0 0.7071067 0.7071069 0 0.707105 0.7071086 -1.26737e-7 0 1 -1.36067e-7 -2.52592e-6 1 -2.75069e-7 -0.7071076 0.7071061 -1.33885e-7 -0.7071072 0.7071064 -2.01342e-7 -1 -1.33514e-5 1.85023e-5 -1 -1.40965e-5 -1.84952e-5</float_array>
+          <technique_common>
+            <accessor source="#wp_bucu_bes-mesh-normals-array" count="28" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wp_bucu_bes-mesh-map-0">
+          <float_array id="wp_bucu_bes-mesh-map-0-array" count="168">0.4936524 0.9767761 0.0314331 0.9767761 0.09912109 0.8842774 0.4936524 0.9767761 0.09912109 0.8842774 0.4260254 0.8842774 0.09912109 0.8842774 0.2624512 0.8460693 0.4260254 0.8842774 0.7373047 0.8460693 0.9003906 0.8842774 0.5737305 0.8842774 0.9682617 0.9767609 0.5737305 0.8842774 0.9003906 0.8842774 0.9682617 0.9767609 0.5058594 0.9767609 0.5737305 0.8842774 0.4936524 0.9767761 0.0314331 0.9767761 0.4260254 0.8842774 0.4260254 0.8842774 0.0314331 0.9767761 0.09912109 0.8842774 0.4260254 0.8842774 0.09912109 0.8842774 0.2624512 0.8460693 0.5737305 0.8842774 0.9682617 0.9767609 0.5058594 0.9767609 0.9682617 0.9767609 0.5737305 0.8842774 0.9003906 0.8842774 0.9003906 0.8842774 0.5737305 0.8842774 0.7373047 0.8460693 0.1439208 0.0258789 0.02522277 0.8244629 0.02522277 0.0258789 0.02522277 0.8244629 0.1439208 0.0258789 0.1439208 0.8244629 0.1439208 0.0258789 0.2624512 0.8244629 0.1439208 0.8244629 0.2624512 0.8244629 0.1439208 0.0258789 0.2624512 0.0258789 0.3811035 0.0258789 0.2624512 0.8244629 0.2624512 0.0258789 0.2624512 0.8244629 0.3811035 0.0258789 0.3811035 0.8244629 0.3811035 0.8244629 0.3811035 0.0258789 0.4997559 0.8244629 0.4997559 0.8244629 0.3811035 0.0258789 0.5 0.0258789 0.4997559 0.8244629 0.5 0.0258789 0.6186524 0.8244629 0.6186524 0.8244629 0.5 0.0258789 0.6186524 0.0258789 0.6186524 0.8244629 0.6186524 0.0258789 0.7373047 0.8244629 0.7373047 0.0258789 0.7373047 0.8244629 0.6186524 0.0258789 0.7373047 0.8244629 0.7373047 0.0258789 0.855957 0.8244629 0.855957 0.0258789 0.855957 0.8244629 0.7373047 0.0258789 0.9746094 0.0258789 0.855957 0.8244629 0.855957 0.0258789 0.855957 0.8244629 0.9746094 0.0258789 0.9746094 0.8244629</float_array>
+          <technique_common>
+            <accessor source="#wp_bucu_bes-mesh-map-0-array" count="84" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="wp_bucu_bes-mesh-vertices">
+          <input semantic="POSITION" source="#wp_bucu_bes-mesh-positions"/>
+        </vertices>
+        <triangles material="MI_WP_bucu_bes-material" count="28">
+          <input semantic="VERTEX" source="#wp_bucu_bes-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#wp_bucu_bes-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#wp_bucu_bes-mesh-map-0" offset="2" set="0"/>
+          <p>0 0 0 1 0 1 2 0 2 0 0 3 2 0 4 3 0 5 2 0 6 4 0 7 3 0 8 5 1 9 6 1 10 7 1 11 8 2 12 7 2 13 6 2 14 8 3 15 9 3 16 7 3 17 10 4 18 11 4 19 12 4 20 12 5 21 11 5 22 13 5 23 12 6 24 13 6 25 14 6 26 15 7 27 16 7 28 17 7 29 16 8 30 15 8 31 18 8 32 18 9 33 15 9 34 19 9 35 20 10 36 21 11 37 22 12 38 21 11 39 20 10 40 23 13 41 20 10 42 24 14 43 23 13 44 24 14 45 20 10 46 25 15 47 26 16 48 24 14 49 25 15 50 24 14 51 26 16 52 27 17 53 27 17 54 26 16 55 28 18 56 28 18 57 26 16 58 29 19 59 28 18 60 29 19 61 30 20 62 30 20 63 29 19 64 31 21 65 30 20 66 31 21 67 32 22 68 33 23 69 32 22 70 31 21 71 32 22 72 33 23 73 34 24 74 35 25 75 34 24 76 33 23 77 36 26 78 34 24 79 35 25 80 34 24 81 36 26 82 37 27 83</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="wp_bucu_bes_wp_bucu_bes_001-skin" name="wp_bucu_bes">
+      <skin source="#wp_bucu_bes-mesh">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="wp_bucu_bes_wp_bucu_bes_001-skin-joints">
+          <Name_array id="wp_bucu_bes_wp_bucu_bes_001-skin-joints-array" count="5">Root bucu_bes bucu_bes_Eff0 bucu_bes_Eff1 Model</Name_array>
+          <technique_common>
+            <accessor source="#wp_bucu_bes_wp_bucu_bes_001-skin-joints-array" count="5" stride="1">
+              <param name="JOINT" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wp_bucu_bes_wp_bucu_bes_001-skin-bind_poses">
+          <float_array id="wp_bucu_bes_wp_bucu_bes_001-skin-bind_poses-array" count="80">1 0 0 0 0 0 1 0 0 -1 0 0 0 0 0 1 1 0 0 0 0 0 1 0 0 -1 0 0 0 0 0 1 1 0 0 0 0 0 1 -0.129 0 -1 0 0 0 0 0 1 -1 0 0 0 0 0 -1 -0.1289999 0 -1 0 0 0 0 0 1 1 0 0 0 0 0 1 0 0 -1 0 0 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#wp_bucu_bes_wp_bucu_bes_001-skin-bind_poses-array" count="5" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wp_bucu_bes_wp_bucu_bes_001-skin-weights">
+          <float_array id="wp_bucu_bes_wp_bucu_bes_001-skin-weights-array" count="38">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#wp_bucu_bes_wp_bucu_bes_001-skin-weights-array" count="38" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#wp_bucu_bes_wp_bucu_bes_001-skin-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#wp_bucu_bes_wp_bucu_bes_001-skin-bind_poses"/>
+        </joints>
+        <vertex_weights count="38">
+          <input semantic="JOINT" source="#wp_bucu_bes_wp_bucu_bes_001-skin-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#wp_bucu_bes_wp_bucu_bes_001-skin-weights" offset="1"/>
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+          <v>1 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1 26 1 27 1 28 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1 37</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="wp_bucu_bes" name="wp_bucu_bes" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <node id="wp_bucu_bes_Root" name="Root" sid="Root" type="JOINT">
+          <matrix sid="transform">1 0 3.42285e-8 0 3.42285e-8 3.42285e-8 -1 0 -1.17159e-15 1 0 0 0 0 0 1</matrix>
+          <node id="wp_bucu_bes_bucu_bes" name="bucu_bes" sid="bucu_bes" type="JOINT">
+            <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+            <node id="wp_bucu_bes_bucu_bes_Eff0" name="bucu_bes_Eff0" sid="bucu_bes_Eff0" type="JOINT">
+              <matrix sid="transform">1 0 -7.10543e-15 0 0 1 -7.90768e-15 0.129 7.10543e-15 7.10543e-15 1 0 0 0 0 1</matrix>
+              <extra>
+                <technique profile="blender">
+                  <roll sid="roll" type="float">0</roll>
+                  <tip_x sid="tip_x" type="float">0</tip_x>
+                  <tip_y sid="tip_y" type="float">0</tip_y>
+                  <tip_z sid="tip_z" type="float">0.129</tip_z>
+                </technique>
+              </extra>
+            </node>
+            <node id="wp_bucu_bes_bucu_bes_Eff1" name="bucu_bes_Eff1" sid="bucu_bes_Eff1" type="JOINT">
+              <matrix sid="transform">-1 0 5.31942e-8 0 0 -1 0 -0.1289999 5.31942e-8 0 1 0 0 0 0 1</matrix>
+              <extra>
+                <technique profile="blender">
+                  <roll sid="roll" type="float">-3.141593</roll>
+                  <tip_x sid="tip_x" type="float">0</tip_x>
+                  <tip_y sid="tip_y" type="float">0</tip_y>
+                  <tip_z sid="tip_z" type="float">-0.129</tip_z>
+                </technique>
+              </extra>
+            </node>
+            <extra>
+              <technique profile="blender">
+                <roll sid="roll" type="float">0</roll>
+                <tip_x sid="tip_x" type="float">0</tip_x>
+                <tip_y sid="tip_y" type="float">0</tip_y>
+                <tip_z sid="tip_z" type="float">0.129</tip_z>
+              </technique>
+            </extra>
+          </node>
+          <node id="wp_bucu_bes_Model" name="Model" sid="Model" type="JOINT">
+            <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+            <extra>
+              <technique profile="blender">
+                <roll sid="roll" type="float">0</roll>
+                <tip_x sid="tip_x" type="float">0</tip_x>
+                <tip_y sid="tip_y" type="float">0</tip_y>
+                <tip_z sid="tip_z" type="float">1</tip_z>
+              </technique>
+            </extra>
+          </node>
+          <extra>
+            <technique profile="blender">
+              <roll sid="roll" type="float">0</roll>
+              <tip_x sid="tip_x" type="float">0</tip_x>
+              <tip_y sid="tip_y" type="float">0</tip_y>
+              <tip_z sid="tip_z" type="float">1</tip_z>
+            </technique>
+          </extra>
+        </node>
+        <node id="wp_bucu_bes_001" name="wp_bucu_bes.001" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <instance_controller url="#wp_bucu_bes_wp_bucu_bes_001-skin">
+            <skeleton>#wp_bucu_bes_Root</skeleton>
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="MI_WP_bucu_bes-material" target="#MI_WP_bucu_bes-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_controller>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
